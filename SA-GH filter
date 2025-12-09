@@ -1,0 +1,34 @@
+! Version: 202512091055
+! Title: SA-GH filter
+! Last modified: 09 Dec 2025 10:55 UTC
+! Expires: 180 days (update frequency)
+! Homepage: http://home.lan/ubo.txt
+
+! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
+! https://adblockplus.org/en/filter-cheatsheet#elementhiding
+! example from: https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
+! https://github.com/hufilter/hufilter
+
+!!!!!!!!!!!!! nCore !!!!!!!!!!!!
+
+! 2025-11-11 https://ncore.pro
+||ncore.cc/images/warning.png$image
+ncore.pro##.infocsik
+ncore.pro##center:nth-of-type(1) > .banner
+ncore.pro###main_tartalom > center:nth-of-type(1)
+ncore.pro##center:nth-of-type(2)
+ncore.pro##.torrent_lenyilo_tartalom > center > div
+ncore.pro##.topnews_alert
+ncore.pro##.banner
+!!
+||nc-img.cdn.l7cache.com/bimages/*$image
+||i.kek.sh/*$image
+
+! 2021-11-29 https://www.jofogas.hu
+www.jofogas.hu##.save-search-list-bottom-container
+www.jofogas.hu###adverticum_r_above_container
+! 2025. nov. 29. https://www.jofogas.hu
+www.jofogas.hu##div.css-ddd5m2.MuiGrid-grid-xs-12.MuiGrid-item.MuiGrid-root:nth-of-type(13)
+! 2025. dec. 9. https://www.jofogas.hu
+www.jofogas.hu###anchor
+www2.jofogas.hu###anchor
